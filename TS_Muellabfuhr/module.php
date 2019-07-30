@@ -1,4 +1,4 @@
-<?
+<?php
 class TS_Muellabfuhr extends IPSModule
 {
     
@@ -28,7 +28,7 @@ class TS_Muellabfuhr extends IPSModule
          
         // Start add scripts 
         // Start add scripts 
-        $skript = '<?
+        $skript = '<?php
 $meldung_ID  = IPS_GetObjectIDByName("Meldung", IPS_GetParent($_IPS["SELF"]));
 $meldungtext_ID  = IPS_GetObjectIDByName("Text", IPS_GetParent($_IPS["SELF"]));
 $feiertag_ID  = IPS_GetObjectIDByName("Feiertag", IPS_GetParent($_IPS["SELF"]));
@@ -195,7 +195,7 @@ function getGermanPublicHolidays($year = null) {
         return $holidays;
     }
 }
-?>';
+';
   $skriptD = $this->RegisterScript("_abfall", "_abfall", $skript, 99); 
 
         IPS_SetHidden($skriptD,true);
@@ -235,4 +235,4 @@ function getGermanPublicHolidays($year = null) {
     }	
 
 }
-?>
+
