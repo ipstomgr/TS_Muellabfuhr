@@ -231,6 +231,7 @@ function getGermanPublicHolidays($year = null) {
       IPS_SetName($eid, "E_timer");
       IPS_SetEventCyclicTimeFrom($eid, 16, 0, 11);
       IPS_SetParent($eid, $TargetID);         //Ereignis zuordnen
+      IPS_SetEventAction($eid, '{7938A5A2-0981-5FE0-BE6C-8AA610D654EB}', []);    
       IPS_SetEventActive($eid, true);             //Ereignis aktivieren
     }	
 
